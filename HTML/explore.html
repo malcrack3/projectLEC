@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktivitas kita</title>
+    <link rel="stylesheet" href="../CSS/explore.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <a href="../HTML/index.html">Home</a>
+        <a href="../HTML/about_us.html">About Us</a>
+        <div class="dropdown">
+          <a href="../HTML/our_story.html" class="dropdown-toggle">Our Story <span>&#9662</span></a>
+            <div class="dropdown-isi">
+              <a href="../HTML/explore.html">Activities</a>
+              <a href="../HTML/playlist.html">Playlist</a>
+            </div>
+        </div>
+        <a href="../HTML/galery.html">Galery</a>
+        <div class="dropdown">
+          <a href="../HTML/note.html" class="dropdown-toggle">Note <span>&#9662</span></a>
+            <div class="dropdown-isi">
+              <a href="../HTML/comments.html">Comments</a>
+            </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            <h1>🌟 Our Activities 🌟</h1>
+            <div class="travel-counter" id="travelCounter">
+                🚀 We went to <span id="destinationCount">8</span> places!
+            </div>
+        </div>
+
+        <div class="activities-grid">
+            <div class="activity-card" onclick="addMemory()">
+                <div class="activity-header">
+                    <div class="activity-icon">🎢</div>
+                    <div class="activity-title">Berpetualang di Dufan</div>
+                </div>
+                <div class="activity-description">
+                    Hari yang cerah menjadi awal petualangan kami di Dufan. Setibanya di lokasi, semangat kami langsung membara untuk menjajal setiap wahana yang menantang.
+                    Ontang Anting menjadi pembuka yang mendebarkan. Deru yang meluncur kencang dan putaran tajam membuat kami berteriak lepas, menciptakan gelak tawa campur aduk dengan rasa takut yang menyenangkan. Dan kami melanjutkan mencoba wahana yang seru lainnya. Waktu istirahat kami isi dengan camilan hangat dan obrolan ringan penuh tawa. Kami juga tak melewatkan kesempatan berfoto bersama karakter-karakter ikonik, menciptakan kenangan dalam bentuk gambar yang kelak akan selalu kami kenang. Petualangan ini mengajarkan bahwa kebahagiaan terbesar ada pada kebersamaan dan tawa yang tulus di setiap langkah perjalanan.
+                    
+                </div>
+            </div>
+
+            <div class="activity-card" onclick="addMemory()">
+                <div class="activity-header">
+                    <div class="activity-icon">🏢</div>
+                    <div class="activity-title"> Eksplore Blok M </div>
+                </div>
+                <div class="activity-description">
+                    Pada hari libur, kami menghabiskan waktu seru bersama di Blok M, kawasan yang semakin hidup dengan suasana urban dan ragam kuliner yang menggoda. Kami memulai petualangan kuliner dengan mencicipi makanan kaki lima di sekitar Blok M Square. Setelah kenyang, kami menyusuri jalan kecil di belakang pasar tradisional dan menemukan hidden gem berupa kafe mungil bergaya vintage yang tenang dan penuh tanaman hias. Tempat itu begitu nyaman untuk bersantai dan berbagi cerita sambil menikmati es kopi susu dan dessert lokal dengan sentuhan modern. Kesan yang tertinggal dari hari itu adalah kehangatan kebersamaan dan rasa kagum karena ternyata Blok M menyimpan banyak kejutan menarik jika kita mau menjelajah lebih dalam.
+                </div>
+            </div>
+
+            <div class="activity-card" onclick="addMemory()">
+                <div class="activity-header">
+                    <div class="activity-icon">👻</div>
+                    <div class="activity-title">Pandora Experience</div>
+                </div>
+                <div class="activity-description">
+                    Beberapa waktu lalu, kami mencoba pengalaman seru yang berbeda dengan mengikuti Pandora Experience, sebuah escape room yang sangat menyeramkan yang penuh tantangan dan teka-teki. Kami memilih salah satu tema horor yang penuh misteri dan adrenalin, lalu dikunci dalam ruangan dengan waktu terbatas untuk memecahkan berbagai puzzle agar bisa keluar. Suasana tegang tapi menyenangkan terasa sejak detik pertama, apalagi saat kami harus bekerja sama, saling melengkapi ide, dan berpacu dengan waktu. Ada momen-momen lucu saat kami salah menafsirkan petunjuk, tapi justru itulah yang membuat pengalaman semakin berkesan. Kesan yang tertinggal sangat mendalam—selain merasakan sensasi petualangan yang intens, kami juga menyadari betapa kuatnya kekompakan dan chemistry kami sebagai sahabat.
+
+                </div>
+            </div>
+
+            <div class="activity-card" onclick="addMemory()">
+                <div class="activity-header">
+                    <div class="activity-icon">🎊</div>
+                    <div class="activity-title">Festival Pekan Raya Jakarta</div>
+                </div>
+                <div class="activity-description">
+                    Pada 2 tahun lalu, kami menghabiskan waktu seru di Festival Pekan Raya Jakarta, menikmati kemeriahan suasana khas Jakarta dengan berbagai stand kuliner, pameran produk lokal, dan wahana permainan yang ramai pengunjung. Kami berkeliling mencoba jajanan legendaris seperti kerak telor dan es doger, sambil tertawa. Puncak dari hari itu adalah saat kami menonton konser Lyodra di panggung utama suara merdunya yang memukau dan penampilannya yang penuh emosi benar-benar membuat suasana semakin magis. Kesan yang tertinggal dari hari itu adalah rasa bahagia dan nostalgia, kami bukan hanya menikmati hiburan, tapi juga menciptakan kenangan yang tak terlupakan.
+                </div>
+            </div>
+
+            <div class="activity-card" onclick="addMemory()">
+                <div class="activity-header">
+                    <div class="activity-icon">🎬</div>
+                    <div class="activity-title">Menonton Film Bioskop </div>
+                </div>
+                <div class="activity-description">
+                    Di sela-sela jeda mata kuliah, kami memutuskan untuk menonton film di bioskop di mall dekat kampus sebagai cara refreshing dari padatnya aktivitas kuliah. Kami memilih film yang sedang hits dan langsung bergegas ke studio sambil membawa camilan favorit. Suasana santai dan nyaman di dalam bioskop membuat kami benar-benar bisa melepas penat, tertawa dan terhibur bersama sepanjang film. Kesan dari momen singkat itu sangat menyenangkan walau sederhana, kebersamaan di tengah rutinitas kampus membuat hari kami lebih hidup dan penuh semangat.
+                </div>
+            </div>
+
+            <div class="activity-card" onclick="addMemory()">
+                <div class="activity-header">
+                    <div class="activity-icon">🍽️</div>
+                    <div class="activity-title">Makan di Restaurant</div>
+                </div>
+                <div class="activity-description">
+                    Pada setiap waktu tertentu, kami meluangkan waktu untuk makan bersama di sebuah restoran sebagai bentuk quality time kami bersama. Kami memesan berbagai hidangan yang menggugah selera dari makanan pembuka, hingga dessert manis yang jadi penutup sempurna. Di meja itu, kami saling bertukar cerita, tertawa lepas, dan sejenak melupakan kesibukan masing-masing. Makan bersama bukan sekadar mengisi perut, tapi jadi bentuk quality time yang penuh makna. Kesan dari malam itu begitu hangat kami merasa lebih dekat, dan disadarkan bahwa di tengah kesibukan, waktu bersama sahabat adalah hal berharga yang tak tergantikan.
+
+                </div>
+            </div>
+
+            <div class="activity-card" onclick="addMemory()">
+                <div class="activity-header">
+                    <div class="activity-icon">🏫</div>
+                    <div class="activity-title">Sosialisasi Ke Sekolah</div>
+                </div>
+                <div class="activity-description">
+                    Beberapa waktu lalu,kami  melakukan aktivitas sosialisasi ke sebuah sekolah sebagai bagian dari tugas kuliah kami. Kami menyampaikan presentasi tentang materi yang kita bawakan kepada para siswa dengan cara yang interaktif dan menyenangkan. Suasana awalnya cukup tegang, tapi lama-kelamaan kami merasa lebih rileks saat melihat antusiasme dan respon positif dari para siswa.  Kesan yang tertinggal sangat membekas selain merasa bangga bisa memberi dampak positif, aku juga merasa lebih dekat dengan teman-teman satu tim, karena kami belajar bekerja sama, beradaptasi, dan mendukung satu sama lain dalam situasi nyata.
+                </div>
+            </div>
+
+            <div class="activity-card" onclick="addMemory()">
+                <div class="activity-header">
+                    <div class="activity-icon">🏠</div>
+                    <div class="activity-title">Bersantai di Kost Lala</div>
+                </div>
+                <div class="activity-description">
+                    Di tengah kesibukan kuliah dan tugas yang menumpuk, kami memutuskan untuk pergi ke kost-an salah satu dari kami yang bernama Lala hanya untuk bersantai dan melepas penat. Kami datang membawa camilan, minuman, dan cerita-cerita seru yang langsung mencairkan suasana dan saling curhat tentang kehidupan kampus maupun hal-hal pribadi. Suasananya hangat, akrab, dan penuh tawaseolah menjadi tempat pelarian sejenak dari rutinitas yang melelahkan. Kesan dari momen itu sangat mendalam, dan kehangatan persahabatan yang tulus.
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer>© 2025 Cucu Nenek Tapasya. All rights reserved.</footer>
+
+</body>
+</html>

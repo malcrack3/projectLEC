@@ -1,12 +1,11 @@
 * {
-  box-sizing: border-box;
-  font-family: Inter, sans-serif;
+  font-family: inter;
   padding: 0;
   margin: 0;
 }
 
 body {
-  background: url(../Gambar/baground\ beige.jpeg);
+  background: url(../Gambar/backround.jpeg);
   background-size: cover;
 }
 
@@ -60,76 +59,45 @@ nav a:hover {
   display: block;
 }
 
-.hero img {
-  width: 100%;
-  height: auto;
-  border-radius: 0px 0px 20px 20px;
-  box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.25);
-}
-
-.group {
-  padding: 50px 150px 50px 150px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 20px;
+.comment {
+  background-color: white;
+  border-radius: 10px;
+  margin: 0px 100px 100px;
+  padding: 50px;
+  border: 2px solid black;
+  min-height: 100vh;
 }
 
 .text {
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+}
+.text h1 {
+  color: #600000;
 }
 
 .text h3 {
-  font-size: 44px;
-  color: #326b00;
+  font-weight: 500;
 }
 
-.text p {
-  font-size: 24px;
+.header {
+  text-align: center;
+  padding: 50px;
 }
 
-.image_top {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.paragraf2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 40px;
-}
-
-.image_kebersamaan img {
-  border-radius: 5px;
-}
-
-.paragraf3 {
-  padding-bottom: 20px;
-}
-
-.paragraf_akhir {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 40px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+.header h1 {
+  font-size: 40px;
 }
 
 footer {
-  color: white;
+  background-color: #417e44;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
   padding: 10px;
-  background-color: #326b00;
 }
 
 @media screen and (max-width: 780px) {
@@ -138,5 +106,10 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+  }
+
+  .comment {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }

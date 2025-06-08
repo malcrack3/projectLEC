@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+body {
+  background: url(../Gambar/backround.jpeg);
+  background-size: cover;
+}
+
+/* Navigation */
+
+nav {
+  background-color: #600000;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: black;
+}
+
+/* dropdown */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-isi {
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 180px;
+  background-color: #d4d4d4;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 10px 0px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.274);
+}
+
+.dropdown-isi a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown:hover .dropdown-isi {
+  display: block;
+}
+
+.hero img {
+  border-radius: 0px 0px 20px 20px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 100px 100px;
+}
+
+.card {
+  width: 362.67px;
+  background: rgb(250, 255, 110);
+  border: 1px solid #afafaf;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: bounce 2s infinite;
+}
+
+.card-image {
+  width: 322.67px;
+  height: 295px;
+  margin: 16px auto 0;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #333333;
+}
+
+.banner {
+  padding: 24px 0;
+  margin: 32px 0;
+  background: #ffc7c7;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+}
+
+.banner .banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.banner-icon {
+  width: 400px;
+  height: auto;
+  animation: bounceGlow 2s infinite;
+}
+
+.banner-text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  max-width: 738px;
+  color: #600000;
+  margin: 0;
+}
+
+.banner-text .highlight {
+  color: #388e3c;
+}
+
+.highlighted-story {
+  margin: 100px 100px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-header {
+  background: #417e44;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 20px;
+  font-weight: 700;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.carousel-body {
+  background: #962828;
+  color: #ffffff;
+  padding: 36px;
+  font-size: 14px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.carousel-body p {
+  font-size: 18px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background: #dbcecd;
+  color: #000000;
+  font-size: 28px;
+  line-height: 1;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.arrow.left {
+  left: -40px;
+}
+
+.arrow.right {
+  right: -40px;
+}
+
+footer {
+  background-color: #417e44;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes bounceGlow {
+  0%,
+  100% {
+    transform: translateY(0);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+  }
+  50% {
+    transform: translateY(-20px);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  nav {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 24px 32px;
+  }
+
+  .banner .banner-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .banner-icon {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .banner-text {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

@@ -1,0 +1,162 @@
+* {
+  font-family: inter;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(../Gambar/backphoto1.jpg);
+}
+
+/* Navigation */
+
+nav {
+  background-color: #600000;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: black;
+}
+
+/* dropdown */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-isi {
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 180px;
+  background-color: #d4d4d4;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 10px 0px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.274);
+}
+
+.dropdown-isi a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown:hover .dropdown-isi {
+  display: block;
+}
+
+/* Intro */
+.intro-text {
+  padding: 50px 50px 0px 50px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Form Container */
+.form-container {
+  background-color: white;
+  color: black;
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #660000;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button {
+  width: 100%;
+  background-color: #660000;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4d0000;
+}
+
+/* Message */
+.message {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.message.error {
+  color: #cc0000;
+}
+
+.message.success {
+  color: #28a745;
+}
+
+/* Footer */
+
+footer {
+  background-color: #417e44;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  nav {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+}
