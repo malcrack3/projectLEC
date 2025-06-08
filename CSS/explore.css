@@ -79,10 +79,10 @@ nav a:hover {
 .header h1 {
   font-size: 56px;
   background: linear-gradient(45deg, #204919, #6b4a29, #371812);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 10px;
   animation: bounce 2s infinite;
+  color: #6b4a29;
 }
 
 @keyframes bounce {
