@@ -121,3 +121,9 @@ $(document).ready(function () {
     });
   }
 });
+
+
+//playlist
+$('.song-card').click(function () {
+  window.location.href = 'songs_detail.html'
+});
