@@ -4,23 +4,13 @@
   margin: 0;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  background: url(../Gambar/backphoto1.jpg);
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  background: url(../Gambar/backround.jpeg);
+  background-size: cover;
 }
 
 /* Navigation */
+
 nav {
   background-color: #600000;
   padding: 20px;
@@ -39,7 +29,8 @@ nav a:hover {
   color: black;
 }
 
-/* Dropdown */
+/* dropdown */
+
 .dropdown {
   position: relative;
 }
@@ -68,89 +59,38 @@ nav a:hover {
   display: block;
 }
 
-/* Intro */
-.intro-text {
-  padding: 50px 50px 0px 50px;
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
-  font-style: italic;
-  font-weight: 600;
-}
-
-/* Form Container */
-.form-container {
+.comment {
   background-color: white;
-  color: black;
-  width: 90%;
-  max-width: 400px;
-  margin: 30px auto;
-  padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 0px 100px 100px;
+  padding: 50px;
+  border: 2px solid black;
+  min-height: 100vh;
 }
 
-.form-container h2 {
+.text {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.text h1 {
+  color: #600000;
+}
+
+.text h3 {
+  font-weight: 500;
+}
+
+.header {
   text-align: center;
-  color: #660000;
-  margin-bottom: 20px;
-  font-size: 28px;
-  font-weight: 800;
+  padding: 50px;
 }
 
-label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
+.header h1 {
+  font-size: 40px;
 }
 
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  resize: none;
-}
-
-textarea {
-  min-height: 100px;
-}
-
-button {
-  width: 100%;
-  background-color: #660000;
-  color: white;
-  border: none;
-  padding: 12px;
-  margin-top: 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #4d0000;
-}
-
-/* Message */
-.message {
-  text-align: center;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-.message.error {
-  color: #cc0000;
-}
-
-.message.success {
-  color: #28a745;
-}
-
-/* Footer */
 footer {
   background-color: #417e44;
   color: #ffffff;
@@ -158,15 +98,18 @@ footer {
   font-weight: 400;
   text-align: center;
   padding: 10px;
-  margin-top: auto;
 }
 
-/* Responsive */
 @media screen and (max-width: 780px) {
   nav {
     gap: 20px;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+  }
+
+  .comment {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
